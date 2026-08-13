@@ -11,6 +11,12 @@ colored*/
 test/
 NYUv2/
 Data/
+*.pth
+*.txt
+*.png
+*.npy
+*.jpg
+
 
 # Distribution / packaging
 .Python
