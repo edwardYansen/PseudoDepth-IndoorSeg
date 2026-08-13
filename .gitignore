@@ -1,0 +1,48 @@
+# === Datasets & Large Files ===
+# Blocks local dataset folders from accidentally uploading to GitHub
+data/
+test/
+datasets/
+*.mat
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# === Model Checkpoints & Weights ===
+# Prevents uploading massive learned weights
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.pkl
+
+# === Python Environment ===
+# Ignores local virtual environments
+.venv/
+venv/
+env/
+ENV/
+pyvenv.cfg
+.env
+
+# === Python Bytecode & Cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# === OS & IDE Specific ===
+.DS_Store
+.vscode/
+.pixi/
+.idea/
+
+# === Outputs & Logs ===
+logs/
+results/
+runs/
+*.log
