@@ -28,10 +28,10 @@ PseudoDepth-IndoorSeg is a research-oriented collection of notebooks and modules
 - OpenCV (cv2), Pillow
 - matplotlib, tensorboard (optional)
 
-Pin exact versions in a dependency file (requirements.txt or a pixi lockfile) in the repo.
-
 ## Installation (pixi)
-This project uses pixi for environment and dependency management (not conda). Install dependencies using your usual pixi workflow and the dependency files in the repository (e.g., requirements.txt, pixi.lock, pixi.toml). If you want, provide the exact pixi CLI commands you use and I can add them to this README verbatim.
+Initial setup pixi follow this link https://pixi.prefix.dev/latest/installation/
+Then have fun, try yourself.
+
 
 ## Dataset (NYUv2)
 This project uses the NYUv2 dataset only. Use the extraction and loader scripts included under the module/nyuv2_python_toolkit_master directory to prepare the dataset. See module/nyuv2_python_toolkit_master/README.md for extraction instructions and expected folder layout.
@@ -60,9 +60,3 @@ Keep quantitative tables and qualitative visualizations in a results/ folder or 
 ## Contributing
 Contributions welcome. Open issues for bug reports or feature requests, and submit PRs for new models, fusion modules, or dataset utilities.
 
-## License
-Add a LICENSE file to the repository root and specify the project's license (e.g., MIT, Apache-2.0).
-
-## Contact
-Maintainer: Edward Yansen (https://github.com/edwardYansen)
-For questions or collaboration, open an Issue in this repository.
