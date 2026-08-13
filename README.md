@@ -1,6 +1,7 @@
 # PseudoDepth-IndoorSeg
 
-Benchmarking and evaluating pseudo-depth integration across modern deep learning frameworks (CNNs / Transformers) for indoor semantic segmentation on the NYUv2 dataset.
+Benchmarking and evaluating pseudo-depth integration across modern deep learning frameworks (SA‑Gate, SegFormerDepth, UNetRes, SwinTransformer.
+) for indoor semantic segmentation on the NYUv2 dataset.
 
 ## Summary
 This repository contains research code and notebooks that integrate monocular pseudo-depth cues into semantic segmentation models and evaluate their effect on the NYUv2 indoor dataset. Pseudo-depth is generated inside the project code and notebooks, so there is no separate pseudo-depth preprocessing step required.
@@ -47,6 +48,17 @@ There is no separate pseudo-depth generation step to run manually—the notebook
 
 ## Experiments and metrics
 Typical experiments compare RGB-only baselines to models that incorporate pseudo-depth with different fusion strategies.
+9 scenarios:
+1. RGB only (except SA‑Gate)
+2. RGB + real depth
+3. RGB + all-zero depth
+4. RGB + PD (MiDaS) — single-channel pseudo-depth
+5. RGB + PD (DepthAnythingV2) — single-channel pseudo-depth
+6. RGB + PD (Marigold) — single-channel pseudo-depth
+7. RGB + PDAM (all three PD combined)
+8. RGB + PDAM (MiDaS + DepthAnythingV2)
+9. RGB + PDAM (MiDaS + Marigold)
+10. RGB + PDAM (DepthAnythingV2 + Marigold)
 
 Reported metric:
 - mean Intersection-over-Union (mIoU)
