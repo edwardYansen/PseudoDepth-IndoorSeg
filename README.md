@@ -14,8 +14,7 @@ This repository contains research code and notebooks that integrate monocular ps
 - Experiments and metrics
 - Results and logging
 - Contributing
-- License
-- Contact
+- Acknowledgement
 
 ## Overview
 PseudoDepth-IndoorSeg is a research-oriented collection of notebooks and modules to test how adding pseudo-depth influences semantic segmentation performance on NYUv2. The project contains multiple model notebooks (each demonstrates a different backbone / fusion strategy) so you can try different approaches interactively.
@@ -59,4 +58,13 @@ Keep quantitative tables and qualitative visualizations in a results/ folder or 
 
 ## Contributing
 Contributions welcome. Open issues for bug reports or feature requests, and submit PRs for new models, fusion modules, or dataset utilities.
+
+## Acknowledgement
+- VainF/nyuv2-python-toolkit — NYUv2 extraction tools and PyTorch dataloader: https://github.com/VainF/nyuv2-python-toolkit
+- charlesCXK/RGBD_Semantic_Segmentation_PyTorch — SA-Gate model for comparison: https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch
+- Oleki-xxh/PDDM — pseudo-depth / depth modules / PDAM used as reference: https://github.com/Oleki-xxh/PDDM
+- Hugging Face — providing model hosting and checkpoints used for pseudo-depth generation (MiDaS, DepthAnythingV2, Marigold): https://huggingface.co
+
+Thank you for the great open-source projects!
+
 
